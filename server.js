@@ -45,6 +45,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects', {
+        pageTitle: 'Portfolio'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Page not found'
